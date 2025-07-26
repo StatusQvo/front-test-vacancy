@@ -1,15 +1,14 @@
 //Подключение шрифтов
 @font-face {
   font-family: 'Inter-Italic';
-  src: url('styles/fonts/Inter-Italic-VariableFont_opsz\,wght.ttf')
-    format('truetype');
+  src: url('fonts/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('styles/fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+  src: url('fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
@@ -348,16 +347,16 @@ body {
       }
     }
     .swiper-slide__container {
-      background-image: url('media/header-back.png');
+      background-image: url('../media/header-back.png');
     }
     &:nth-child(1) .swiper-slide__container {
-      background-image: url('media/header-back.png');
+      background-image: url('../media/header-back.png');
     }
     &:nth-child(2) .swiper-slide__container {
-      background-image: url('media/header-back-pink.png');
+      background-image: url('../media/header-back-pink.png');
     }
     &:nth-child(3) .swiper-slide__container {
-      background-image: url('media/header-back-blue.png');
+      background-image: url('../media/header-back-blue.png');
     }
   }
   // prettier-ignore
