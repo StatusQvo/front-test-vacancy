@@ -346,6 +346,7 @@ body {
         font-size: 16px;
       }
     }
+
     .swiper-slide__container {
       background-image: url('../media/header-back.png');
     }
@@ -367,7 +368,7 @@ body {
     }
   }
   .swiper-pagination {
-    bottom: 38px;
+    bottom: 0;
     left: 50%;
     display: flex;
     padding: 13px 20px;
@@ -386,6 +387,12 @@ body {
       width: 6px;
       height: 6px;
       background: choose-color(4);
+    }
+    @media (max-width: 1280px) {
+      bottom: 11%;
+    }
+    @media (max-width: 1200px) {
+      bottom: 26%;
     }
   }
 

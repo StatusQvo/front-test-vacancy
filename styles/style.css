@@ -349,7 +349,7 @@ body {
   margin-right: 3em;
 }
 .main-jlsntwn .swiper-pagination {
-  bottom: 38px;
+  bottom: 0;
   left: 50%;
   display: flex;
   padding: 13px 20px;
@@ -368,6 +368,16 @@ body {
   width: 6px;
   height: 6px;
   background: #fff;
+}
+@media (max-width: 1280px) {
+  .main-jlsntwn .swiper-pagination {
+    bottom: 11%;
+  }
+}
+@media (max-width: 1200px) {
+  .main-jlsntwn .swiper-pagination {
+    bottom: 26%;
+  }
 }
 .main-jlsntwn .main-block {
   display: flex;
