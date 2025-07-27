@@ -14,10 +14,14 @@
 }
 // Подключение слайдера
 .swiper-container {
+  position: relative;
   width: 100%;
   height: auto;
   @media (max-width: 700px) {
-    display: none;
+    // display: none;
+    visibility: hidden;
+    pointer-events: none;
+    height: 0;
   }
 }
 // начальный размер блока
@@ -297,6 +301,9 @@ body {
     @media (max-width: 800px) {
       top: 100px;
     }
+    @media (max-width: 700px) {
+      color: gray;
+    }
   }
   .swiper-slide {
     &__container {
@@ -368,7 +375,7 @@ body {
     }
   }
   .swiper-pagination {
-    bottom: 0;
+    bottom: 38px;
     left: 50%;
     display: flex;
     padding: 13px 20px;
@@ -387,15 +394,6 @@ body {
       width: 6px;
       height: 6px;
       background: choose-color(4);
-    }
-    @media (max-width: 1280px) {
-      bottom: 11%;
-    }
-    @media (max-width: 1200px) {
-      bottom: 26%;
-    }
-    @media (max-width: 700px) {
-      display: none;
     }
   }
 
