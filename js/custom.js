@@ -407,7 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   <button class="remove-btn">
     <img src="${
-      item.removed ? '/media/repeat.png' : '/media/close-x.png'
+      item.removed ? 'media/repeat.png' : 'media/close-x.png'
     }" alt="${item.removed ? 'Вернуть' : 'Удалить'}">
   </button>
 `;
