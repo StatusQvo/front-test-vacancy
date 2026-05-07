@@ -517,15 +517,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Навешивание на product-plus
   document.body.addEventListener("click", (e) => {
-    if (e.target.classList.contains("product-plus")) {
-      const productEl = e.target.closest(".main-block__item");
-      const title = productEl.querySelector(".block-item__text").textContent;
-      const image = productEl.querySelector("img").src;
-      const priceText =
-        productEl.querySelector(".block-item__cost").textContent;
-      const price = parseFloat(priceText.replace("₽", "").replace(",", "."));
+    const productEl = e.target.closest(".main-block__item");
+    if (productEl) {
+      if (e.target.classList.contains("product-plus")) {
+        //const productEl = e.target.closest(".main-block__item");
+        const title = productEl.querySelector(".block-item__text").textContent;
+        const image = productEl.querySelector("img").src;
+        const priceText =
+          productEl.querySelector(".block-item__cost").textContent;
+        const price = parseFloat(priceText.replace("₽", "").replace(",", "."));
 
-      addToCart({ title, image, price });
+        addToCart({ title, image, price });
+      }
       //повышение яркости при клике
       activeProductEffect(productEl);
     }
