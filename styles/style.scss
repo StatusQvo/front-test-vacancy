@@ -1,14 +1,14 @@
 //Подключение шрифтов
 @font-face {
-  font-family: 'Inter-Italic';
-  src: url('fonts/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-family: "Inter-Italic";
+  src: url("fonts/Inter-Italic-VariableFont_opsz\,wght.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("fonts/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
@@ -37,7 +37,7 @@ $grey-border: 1px solid rgba(0, 0, 0, 0.1);
   text-decoration: none;
 }
 %common-font {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 %header-group1 {
   display: flex;
@@ -149,13 +149,13 @@ body {
           @include mobile-menu;
 
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: -6px;
             @include mobile-menu;
           }
           &::after {
-            content: '';
+            content: "";
             @include mobile-menu;
             position: absolute;
             top: 6px;
@@ -355,16 +355,16 @@ body {
     }
 
     .swiper-slide__container {
-      background-image: url('../media/header-back.png');
+      background-image: url("../media/header-back.png");
     }
     &:nth-child(1) .swiper-slide__container {
-      background-image: url('../media/header-back.png');
+      background-image: url("../media/header-back.png");
     }
     &:nth-child(2) .swiper-slide__container {
-      background-image: url('../media/header-back-pink.png');
+      background-image: url("../media/header-back-pink.png");
     }
     &:nth-child(3) .swiper-slide__container {
-      background-image: url('../media/header-back-blue.png');
+      background-image: url("../media/header-back-blue.png");
     }
   }
   // prettier-ignore
@@ -436,7 +436,7 @@ body {
             transition: background-color 0.3s ease;
 
             &::after {
-              content: '';
+              content: "";
               position: absolute;
               width: 8px;
               height: 8px;
@@ -617,6 +617,8 @@ body {
           width: 278px;
           border-top: 1px solid white;
           border-bottom: $grey-border;
+          transition: 0.6s, ease;
+
           img {
             margin-bottom: 10px;
             height: 278px;
@@ -662,7 +664,9 @@ body {
               background-color: choose-color(6);
               border: none;
               border-radius: 8px;
-              transition: opacity 0.3s ease, visibility 0.3s ease;
+              transition:
+                opacity 0.3s ease,
+                visibility 0.3s ease;
               @media (max-width: 760px) {
                 opacity: 1;
                 visibility: visible;
@@ -676,7 +680,7 @@ body {
 
           &:hover {
             &::after {
-              content: '';
+              content: "";
               position: absolute;
               bottom: 1px;
               display: block;
@@ -694,6 +698,10 @@ body {
               }
             }
           }
+          &.active-product {
+            filter: brightness(1.08);
+          }
+
           @media (max-width: 1280px) {
             width: 200px;
           }
@@ -732,7 +740,9 @@ body {
   .selector__options {
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
   }
   .options_activate {
     visibility: visible;

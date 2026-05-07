@@ -379,8 +379,7 @@ body {
 }
 .main-jlsntwn .main-block {
   display: flex;
-  -moz-column-gap: 42px;
-       column-gap: 42px;
+  column-gap: 42px;
 }
 .main-jlsntwn .main-block .side-nav {
   display: flex;
@@ -400,8 +399,7 @@ body {
 .main-jlsntwn .main-block .side-nav ul .side-nav__filter {
   cursor: pointer;
   display: flex;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
+  column-gap: 12px;
   align-items: center;
   font-weight: 400;
   font-size: 12px;
@@ -594,8 +592,7 @@ body {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
 }
 .main-jlsntwn .main-block .main-block__container .main-block-items__container .main-block__item {
   cursor: pointer;
@@ -605,6 +602,7 @@ body {
   width: 278px;
   border-top: 1px solid white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 0.6s, ease;
 }
 .main-jlsntwn .main-block .main-block__container .main-block-items__container .main-block__item img {
   margin-bottom: 10px;
@@ -684,6 +682,9 @@ body {
     background-color: #7bb899;
   }
 }
+.main-jlsntwn .main-block .main-block__container .main-block-items__container .main-block__item.active-product {
+  filter: brightness(1.08);
+}
 @media (max-width: 1280px) {
   .main-jlsntwn .main-block .main-block__container .main-block-items__container .main-block__item {
     width: 200px;
@@ -709,8 +710,7 @@ body {
 }
 @media (max-width: 600px) {
   .main-jlsntwn .main-block .main-block__container .main-block-items__container {
-    -moz-column-gap: 15px;
-         column-gap: 15px;
+    column-gap: 15px;
   }
 }
 @media (max-width: 1200px) {
@@ -784,8 +784,7 @@ body {
 }
 @media (max-width: 700px) {
   .main-jlsntwn .cart-popup .cart-item .cart-quantity {
-    -moz-column-gap: 8px;
-         column-gap: 8px;
+    column-gap: 8px;
   }
 }
 .main-jlsntwn .cart-close-btn {
@@ -861,8 +860,7 @@ body {
 }
 .main-jlsntwn .cart-item .cart-quantity {
   display: flex;
-  -moz-column-gap: 22px;
-       column-gap: 22px;
+  column-gap: 22px;
 }
 .main-jlsntwn .cart-item .cart-quantity .quantity-minus,
 .main-jlsntwn .cart-item .cart-quantity .quantity-plus {
@@ -944,4 +942,6 @@ footer {
   footer {
     height: 154px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
